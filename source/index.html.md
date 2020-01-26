@@ -46,10 +46,10 @@ client = SpamWatch::Client.new(token)
 
 The API uses API keys to allow access to the API. You can get a API key in the [Support Chat](https://t.me/SpamWatchSupport).
 
-The API expects for the API key to be included in all API requests to the server in a header that looks like the following:
+The API expects the API key to be included in all API requests to the server in a header that looks like the following:
 
 `Authorization: Bearer $API_KEY`
 
 <aside class="notice">
-You must replace <code>API_KEY</code> with your personal API key.
+You must replace <code>API_KEY</code> with your API key.
 </aside>

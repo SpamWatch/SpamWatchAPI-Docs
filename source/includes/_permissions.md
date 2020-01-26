@@ -1,5 +1,5 @@
 # Permissions
-Each endpoint (except `/version`) requires a cetain permission level. The required level is mentioned in the documentation of the endpoint.
+Each endpoint (except `/version`) requires a certain permission level. The required level is mentioned in the documentation of the endpoint.
 
 The API has three permission levels:
 
