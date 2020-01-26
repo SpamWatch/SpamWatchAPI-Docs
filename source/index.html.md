@@ -4,6 +4,7 @@ title: SpamWatch API Reference
 language_tabs: # must be one of https://git.io/vQNgJ
   - python: Python
   - javascript: NodeJS
+  - crystal: Crystal
   
 toc_footers:
   - <a href='https://t.me/SpamWatch'>Join the channel for any news</a>
@@ -32,6 +33,13 @@ client = spamwatch.Client('API_KEY')
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
+```
+
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
 ```
 
 > Make sure to replace `API_KEY` with your API key.

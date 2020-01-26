@@ -16,6 +16,15 @@ const client = new SpamWatch.Client("API_KEY");
 let ban = client.getBan(777000)
 ```
 
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+ban = client.get_ban(777000)
+```
+
 > This will return the following:
 
 ```python
@@ -27,6 +36,10 @@ let ban = client.getBan(777000)
 ```
 
 ```javascript
+// Todo
+```
+
+```crystal
 // Todo
 ```
 
@@ -77,6 +90,15 @@ const client = new SpamWatch.Client("API_KEY");
 let bans = client.getBans()
 ```
 
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+bans = client.get_bans()
+```
+
 > This will return the following:
 
 ```python
@@ -93,6 +115,10 @@ let bans = client.getBans()
 ```
 
 ```javascript
+// Todo
+```
+
+```crystal
 // Todo
 ```
 
@@ -144,6 +170,14 @@ const client = new SpamWatch.Client("API_KEY");
 client.addBan(777000, "reason")
 ```
 
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+client.add_ban(777000, "reason")
+```
 
 ### HTTP Request
 
@@ -191,16 +225,24 @@ This method returns <code>204 No Content</code>
 import spamwatch
 
 client = spamwatch.Client('API_KEY')
-ban = client.delete_ban(777000)
+client.delete_ban(777000)
 ```
 
 ```javascript
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-let ban = client.deleteBan(777000)
+client.deleteBan(777000)
 ```
 
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+client.delete_ban(777000)
+```
 
 ### HTTP Request
 

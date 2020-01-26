@@ -25,6 +25,10 @@ let bans = client.version()
 // Todo
 ```
 
+```crystal
+// Todo
+```
+
 > The returned JSON:
 
 ```json

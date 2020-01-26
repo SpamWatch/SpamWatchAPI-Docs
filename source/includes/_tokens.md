@@ -6,23 +6,40 @@
 import spamwatch
 
 client = spamwatch.Client('API_KEY')
-bans = client.get_self()
+my_token = client.get_self()
 ```
 
 ```javascript
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-let bans = client.getSelf()
+let my_token = client.getSelf()
+```
+
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+my_token = client.get_self()
 ```
 
 > This will return the following:
 
 ```python
-<Token: id: 1, permission: <Permission.Root: 1>, token: 'vN9cBTtO8xgC4Qm', userid: 777000, retired: False>
+<Token: id: 1,
+        permission: <Permission.Root: 1>,
+        token: 'vN9cBTtO8xgC4Qm',
+        userid: 777000,
+        retired: False>
 ```
 
 ```javascript
+// Todo
+```
+
+```crystal
 // Todo
 ```
 
@@ -53,14 +70,23 @@ User
 import spamwatch
 
 client = spamwatch.Client('API_KEY')
-bans = client.get_tokens()
+tokens = client.get_tokens()
 ```
 
 ```javascript
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-let bans = client.getTokens()
+let tokens = client.getTokens()
+```
+
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+tokens = client.get_tokens()
 ```
 
 > This will return the following:
@@ -79,6 +105,10 @@ let bans = client.getTokens()
 ```
 
 ```javascript
+// Todo
+```
+
+```crystal
 // Todo
 ```
 
@@ -118,14 +148,23 @@ Root
 import spamwatch
 
 client = spamwatch.Client('API_KEY')
-bans = client.get_token(1)
+token = client.get_token(1)
 ```
 
 ```javascript
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-let bans = client.getToken(1)
+let token = client.getToken(1)
+```
+
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+token = client.get_token(1)
 ```
 
 > This will return the following:
@@ -141,6 +180,12 @@ let bans = client.getToken(1)
 ```javascript
 // Todo
 ```
+
+```crystal
+// Todo
+```
+
+
 
 > The returned JSON:
 
@@ -182,9 +227,17 @@ client.create_token(777000, Permission.User)
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-# Todo
+// Todo
 ```
 
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+// Todo
+```
 
 ### HTTP Request
 
@@ -227,14 +280,23 @@ This method returns <code>204 No Content</code>
 import spamwatch
 
 client = spamwatch.Client('API_KEY')
-bans = client.delete_token(1)
+client.delete_token(1)
 ```
 
 ```javascript
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-let bans = client.deleteToken(1)
+client.deleteToken(1)
+```
+
+```crystal
+require "spamwatch"
+
+token = "API_KEY"
+client = SpamWatch::Client.new(token)
+
+client.delete_token(1)
 ```
 
 This retires a specific Token. The Token won't be able to make any requests anymore.
