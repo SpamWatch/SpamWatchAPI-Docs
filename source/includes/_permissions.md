@@ -30,10 +30,11 @@ GET | [`/tokens/$id`](#getting-a-specific-token)
 POST | [`/tokens`](#creating-a-token)
 DELTE | [`/tokens/$id`](#retiring-a-specific-token)
 
-### `/version`
+### `/`
 Request | Path
 ------- | ----
 GET | [`/version`](#getting-the-api-version)
+GET | [`/stats`](#getting-some-stats)
 
 ## Admin
 A token with Admin permission can do the following:
@@ -45,10 +46,11 @@ GET | [`/banlist/$id`](#getting-a-specific-ban)
 POST | [`/banlist`](#adding-a-ban)
 DELTE | [`/banlist/$id`](#deleting-a-ban)
 
-### `/version`
+### `/`
 Request | Path
 ------- | ----
 GET | [`/version`](#getting-the-api-version)
+GET | [`/stats`](#getting-some-stats)
 
 ## User
 A token with User permission can do the following:
@@ -58,7 +60,8 @@ Request | Path
 ------- | ----
 GET | [`/banlist/$id`](#getting-a-specific-ban)
 
-### `/version`
+### `/`
 Request | Path
 ------- | ----
 GET | [`/version`](#getting-the-api-version)
+GET | [`/stats`](#getting-some-stats)
