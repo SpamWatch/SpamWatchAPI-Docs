@@ -514,7 +514,9 @@ html, body {
 // This is all the stuff that appears in the right half of the page
 
 .content {
-  pre, blockquote {
+  // TODO Find better way to fix this
+  // Fixes issue by something generating a div.highlight around code
+  div, blockquote {
     background-color: $code-bg;
     color: #fff;
 
