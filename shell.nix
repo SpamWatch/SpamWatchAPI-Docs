@@ -2,11 +2,10 @@
 with import <nixpkgs> {};
 stdenv.mkDerivation {
     name = "spamwatchapi-docs";
-    buildInputs = [ nodejs ruby lzma zlib ];
+    buildInputs = [ nodejs ruby lzma zlib libffi ];
     shellHook =
   ''
     bundle install
     bundle exec middleman server
   '';
 }
-

@@ -1,12 +1,64 @@
 # Permissions
-Each endpoint (except `/version`) requires a cetain permission level. The required level is mentioned on the documentation of the endpoint.
+Each endpoint (except `/version`) requires a cetain permission level. The required level is mentioned in the documentation of the endpoint.
 
 The API has three permission levels:
 
 Level | Rights
 ---------- | -------
-Root | Can do everything
-Admin | Can query and update the banlist
-User | Can query the Banlist
+[Root](#root) | Can do everything
+[Admin](#admin) | Can query and update the banlist
+[User](#user) | Can query the Banlist
 
-To find out your Permission level go here: <a href="#">Getting your own Token</a> 
+To find out your Tokens Permission level go here: <a href="#getting-your-own-token">Getting your own Token</a> 
+
+## Root
+Root is the highest permission level. A token with Root permission can do the following:
+
+### `/banlist`
+Request | Path
+------- | ----
+GET | [`/banlist`](#getting-all-bans)
+GET | [`/banlist/$id`](#getting-a-specific-ban)
+POST | [`/banlist`](#adding-a-ban)
+DELTE | [`/banlist/$id`](#deleting-a-ban)
+
+### `/tokens`
+Request | Path
+------- | ----
+GET | [`/tokens`](#getting-all-tokens)
+GET | [`/tokens/$id`](#getting-a-specific-token)
+POST | [`/tokens`](#creating-a-token)
+DELTE | [`/tokens/$id`](#retiring-a-specific-token)
+
+### `/version`
+Request | Path
+------- | ----
+GET | [`/version`](#getting-the-api-version)
+
+## Admin
+A token with Admin permission can do the following:
+
+### `/banlist`
+Request | Path
+------- | ----
+GET | [`/banlist/$id`](#getting-a-specific-ban)
+POST | [`/banlist`](#adding-a-ban)
+DELTE | [`/banlist/$id`](#deleting-a-ban)
+
+### `/version`
+Request | Path
+------- | ----
+GET | [`/version`](#getting-the-api-version)
+
+## User
+A token with User permission can do the following:
+
+### `/banlist`
+Request | Path
+------- | ----
+GET | [`/banlist/$id`](#getting-a-specific-ban)
+
+### `/version`
+Request | Path
+------- | ----
+GET | [`/version`](#getting-the-api-version)
