@@ -1,0 +1,156 @@
+// Tomorrow Dark
+
+// special
+
+//$highlighting-background: #1d1f21;
+
+$highlighting-grey: #1d1f21;
+$highlighting-red: #cc6666;
+$highlighting-green: #b5bd68;
+$highlighting-yellow: #f0c674;
+$highlighting-blue: #81a2be;
+$highlighting-purple: #b294bb;
+$highlighting-cyan: #8abeb7;
+$highlighting-white: #ffffff;
+
+// Comment
+.highlight .c { color: $highlighting-grey }
+// Error
+.highlight .err { color: $highlighting-white; border: 1px solid $highlighting-red }
+// Generic
+.highlight .g { color: $highlighting-white }
+// Keyword
+.highlight .k { color: $highlighting-purple }
+// Literal
+.highlight .l { color: $highlighting-white }
+// Name
+.highlight .n { color: $highlighting-white }
+// Operator
+.highlight .o { color: $highlighting-blue }
+// Other
+.highlight .x { color: $highlighting-white }
+// Punctuation
+.highlight .p { color: $highlighting-blue }
+// Comment.Multiline
+.highlight .cm { color: $highlighting-grey }
+// Comment.Preproc
+.highlight .cp { color: $highlighting-grey }
+// Comment.Single
+.highlight .c1 { color: $highlighting-grey }
+// Comment.Special
+.highlight .cs { color: $highlighting-red; font-weight: bold }
+// Generic.Deleted
+.highlight .gd { color: $highlighting-red }
+// Generic.Emph
+.highlight .ge { color: $highlighting-white; font-style: italic }
+// Generic.Error
+.highlight .gr { color: $highlighting-red }
+// Generic.Heading
+.highlight .gh { color: $highlighting-blue; font-weight: bold }
+// Generic.Inserted
+.highlight .gi { color: $highlighting-green }
+// Generic.Output
+.highlight .go { color: #808080 }
+// Generic.Prompt
+.highlight .gp { color: $highlighting-blue; font-weight: bold }
+// Generic.Strong
+.highlight .gs { color: $highlighting-white; font-weight: bold }
+// Generic.Subheading
+.highlight .gu { color: $highlighting-purple; font-weight: bold }
+// Generic.Traceback
+.highlight .gt { color: $highlighting-blue }
+// Keyword.Constant
+.highlight .kc { color: $highlighting-yellow }
+// Keyword.Declaration
+.highlight .kd { color: $highlighting-purple }
+// Keyword.Namespace
+.highlight .kn { color: $highlighting-purple }
+// Keyword.Pseudo
+.highlight .kp { color: $highlighting-yellow }
+// Keyword.Reserved
+.highlight .kr { color: $highlighting-yellow }
+// Keyword.Type
+.highlight .kt { color: $highlighting-green }
+// Literal.Date
+.highlight .ld { color: $highlighting-white }
+// Literal.Number
+.highlight .m { color: $highlighting-purple }
+// Literal.String
+.highlight .s { color: $highlighting-green }
+// Name.Attribute
+.highlight .na { color: $highlighting-white }
+// Name.Builtin
+.highlight .nb { color: $highlighting-purple }
+// Name.Class
+.highlight .nc { color: $highlighting-yellow }
+// Name.Constant
+.highlight .no { color: $highlighting-white }
+// Name.Decorator
+.highlight .nd { color: $highlighting-white }
+// Name.Entity
+.highlight .ni { color: $highlighting-white }
+// Name.Exception
+.highlight .ne { color: $highlighting-blue; font-weight: bold }
+// Name.Function
+.highlight .nf { color: $highlighting-blue }
+// Name.Label
+.highlight .nl { color: $highlighting-white }
+// Name.Namespace
+.highlight .nn { color: $highlighting-white }
+// Name.Other
+.highlight .nx { color: $highlighting-white }
+// Name.Property
+.highlight .py { color: $highlighting-white }
+// Name.Tag
+.highlight .nt { color: $highlighting-white }
+// Name.Variable
+.highlight .nv { color: $highlighting-cyan }
+// Operator.Word
+.highlight .ow { color: $highlighting-yellow }
+// Text.Whitespace
+.highlight .w { color: $highlighting-white }
+// Literal.Number.Float
+.highlight .mf { color: $highlighting-purple }
+// Literal.Number.Hex
+.highlight .mh { color: $highlighting-purple }
+// Literal.Number.Integer
+.highlight .mi { color: $highlighting-purple }
+// Literal.Number.Oct
+.highlight .mo { color: $highlighting-purple }
+// Literal.String.Backtick
+.highlight .sb { color: $highlighting-green }
+// Literal.String.Char
+.highlight .sc { color: $highlighting-green }
+// Literal.String.Doc
+.highlight .sd { color: $highlighting-green }
+// Literal.String.Double
+.highlight .s2 { color: $highlighting-green }
+// Literal.String.Escape
+.highlight .se { color: $highlighting-green }
+// Literal.String.Heredoc
+.highlight .sh { color: $highlighting-green }
+// Literal.String.Interpol
+.highlight .si { color: $highlighting-green }
+// Literal.String.Other
+.highlight .sx { color: $highlighting-green }
+// Literal.String.Regex
+.highlight .sr { color: $highlighting-green }
+// Literal.String.Single
+.highlight .s1 { color: $highlighting-green }
+// Literal.String.Symbol
+.highlight .ss { color: $highlighting-green }
+// Name.Builtin.Pseudo
+.highlight .bp { color: $highlighting-red }
+// Name.Variable.Class
+.highlight .vc { color: $highlighting-cyan }
+// Name.Variable.Global
+.highlight .vg { color: $highlighting-cyan }
+// Name.Variable.Instance
+.highlight .vi { color: $highlighting-cyan }
+// Literal.Number.Integer.Long
+.highlight .il { color: $highlighting-purple }
+
+// Fix weird background
+.c, .err, .g, .k, .l, .n, .o, .x, .p, .cm, .cp, .c1, .cs, .gd, .ge, .gr, .gh, .gi, .go, .gp, .gs, .gu, .gt, .kc, .kd, .kn, .kp, .kr, .kt, .ld, .m, .s, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nx, .py, .nt, .nv, .ow, .w, .mf, .mh, .mi, .mo, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss, .bp, .vc, .vg, .vi, .il {
+  background-color: transparent!important;
+}
