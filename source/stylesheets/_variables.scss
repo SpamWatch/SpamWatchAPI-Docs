@@ -23,15 +23,18 @@ under the License.
 
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #101010 !default;
-$examples-bg: #202020 !default;
-$code-bg: #1E1E1E !default;
-$code-annotation-bg: #202020 !default;
-$nav-subitem-bg: #202020 !default;
+$brand-color: #0a0a14;
+$brand-color-1: #14141E;
+$brand-color-2: #1E1E28;
+$nav-bg: $brand-color !default;
+$examples-bg: $brand-color-1 !default;
+$code-bg: $brand-color-2 !default;
+$code-annotation-bg: $brand-color-1 !default;
+$nav-subitem-bg: $brand-color-1 !default;
 $nav-active-bg: #e52a57 !default;
-$nav-active-parent-bg: #202020 !default; // parent links of the current section
+$nav-active-parent-bg: $brand-color-1 !default; // parent links of the current section
 $lang-select-border: #000 !default;
-$lang-select-bg: #101010 !default;
+$lang-select-bg: $brand-color !default;
 $lang-select-active-bg: #e52a57 !default; // feel free to change this to blue or something
 $lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
 $main-bg: #F3F7F9 !default;
