@@ -154,6 +154,57 @@ Root
 The `admin` field is the ID of the Token that the ban was issued with. It is not the User ID of the admin.
 </aside>
 
+## Getting a list of banned ids
+
+```python
+import spamwatch
+
+client = spamwatch.Client('API_KEY')
+bans = client.get_bans_min()
+```
+
+```javascript
+// TODO
+```
+
+```crystal
+// TODO
+```
+
+> This will return the following:
+
+```python
+[12345, 6789]
+```
+
+```javascript
+// Todo
+```
+
+```crystal
+// Todo
+```
+
+> The returned Content:
+
+```
+12345
+6789
+```
+
+This returns a newline seperated list of all Bans. This method currently ignores the `Accept` header and will always return a newline seperated list. In the future it might return a JSON with the corresponding content type.
+
+### HTTP Request
+
+`GET https://api.spamwat.ch/banlist/all`
+
+### Required permission level
+User
+
+<aside class="notice">
+This method is rate limited at 1 request every 30 minutes. If this is exceeded the API will return a 429 Error
+</aside>
+
 ## Adding a ban
 
 ```python
