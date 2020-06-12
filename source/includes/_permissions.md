@@ -20,7 +20,7 @@ Request | Path
 GET | [`/banlist`](#getting-all-bans)
 GET | [`/banlist/$id`](#getting-a-specific-ban)
 POST | [`/banlist`](#adding-a-ban)
-DELTE | [`/banlist/$id`](#deleting-a-ban)
+DELETE | [`/banlist/$id`](#deleting-a-ban)
 
 ### `/tokens`
 Request | Path
@@ -28,7 +28,7 @@ Request | Path
 GET | [`/tokens`](#getting-all-tokens)
 GET | [`/tokens/$id`](#getting-a-specific-token)
 POST | [`/tokens`](#creating-a-token)
-DELTE | [`/tokens/$id`](#retiring-a-specific-token)
+DELETE | [`/tokens/$id`](#retiring-a-specific-token)
 
 ### `/`
 Request | Path
@@ -44,7 +44,7 @@ Request | Path
 ------- | ----
 GET | [`/banlist/$id`](#getting-a-specific-ban)
 POST | [`/banlist`](#adding-a-ban)
-DELTE | [`/banlist/$id`](#deleting-a-ban)
+DELETE | [`/banlist/$id`](#deleting-a-ban)
 
 ### `/`
 Request | Path

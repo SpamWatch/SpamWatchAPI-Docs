@@ -241,7 +241,7 @@ client = SpamWatch::Client.new(token)
 
 ### HTTP Request
 
-`POST https://api.spamwat.ch/token`
+`POST https://api.spamwat.ch/tokens`
 
 ### Headers
 Key | Value
