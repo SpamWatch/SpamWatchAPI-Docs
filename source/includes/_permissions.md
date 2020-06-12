@@ -18,6 +18,7 @@ Root is the highest permission level. A token with Root permission can do the fo
 Request | Path
 ------- | ----
 GET | [`/banlist`](#getting-all-bans)
+GET | [`/banlist/all`](#getting-a-list-of-banned-ids)
 GET | [`/banlist/$id`](#getting-a-specific-ban)
 POST | [`/banlist`](#adding-a-ban)
 DELETE | [`/banlist/$id`](#deleting-a-ban)
@@ -42,6 +43,7 @@ A token with Admin permission can do the following:
 ### `/banlist`
 Request | Path
 ------- | ----
+GET | [`/banlist/all`](#getting-a-list-of-banned-ids)
 GET | [`/banlist/$id`](#getting-a-specific-ban)
 POST | [`/banlist`](#adding-a-ban)
 DELETE | [`/banlist/$id`](#deleting-a-ban)
@@ -58,6 +60,7 @@ A token with User permission can do the following:
 ### `/banlist`
 Request | Path
 ------- | ----
+GET | [`/banlist/all`](#getting-a-list-of-banned-ids)
 GET | [`/banlist/$id`](#getting-a-specific-ban)
 
 ### `/`

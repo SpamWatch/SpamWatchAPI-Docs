@@ -202,7 +202,7 @@ This returns a newline seperated list of all Bans. This method currently ignores
 User
 
 <aside class="notice">
-This method is rate limited at 1 request every 30 minutes. If this is exceeded the API will return a 429 Error
+This method is rate limited at 1 request every 30 minutes for the `User` permission level. If this is exceeded the API will return a 429 Error
 </aside>
 
 ## Adding a ban
