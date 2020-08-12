@@ -5,6 +5,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - python: Python
   - javascript: NodeJS
   - crystal: Crystal
+  - csharp: CSharp
   
 toc_footers:
   - <a href='https://t.me/SpamWatch'>Join the channel for any news</a>
@@ -42,7 +43,13 @@ token = "API_KEY"
 client = SpamWatch::Client.new(token)
 ```
 
-> Make sure to replace `API_KEY` with your API key.
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+```
+
+> Make sure to replace `APIgit st_KEY` with your API key.
 
 The API uses API keys to allow access to the API. You can get a API key in the [Support Chat](https://t.me/SpamWatchSupport).
 

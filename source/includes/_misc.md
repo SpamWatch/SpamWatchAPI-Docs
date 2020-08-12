@@ -19,6 +19,14 @@ let bans = client.version()
 // Todo
 ```
 
+
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var version = client.Version();
+```
+
 > This will return the following:
 
 ```python
@@ -31,6 +39,13 @@ let bans = client.version()
 
 ```crystal
 // Todo
+```
+
+```csharp
+<SpamWatchVersion: Major: 1,
+      Minor: 0,
+      Patch: 0, 
+      Version: "1.0.0">
 ```
 
 > The returned JSON:
@@ -70,6 +85,14 @@ let bans = client.stats()
 // Todo
 ```
 
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var stats = client.Stats();
+
+```
+
 > This will return the following:
 
 ```python
@@ -82,6 +105,10 @@ let bans = client.stats()
 
 ```crystal
 // Todo
+```
+
+```csharp
+<SpamWatchStats: TotalBanCount 70210>
 ```
 
 > The returned JSON:
