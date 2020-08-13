@@ -210,7 +210,7 @@ bans = client.get_bans_min()
 using SpamWatch;
 
 var client = new SpamWatch.Client("API_KEY");
-var bans = client.GetMansMin();
+var bans = client.GetBansMin();
 ```
 
 > This will return the following:
