@@ -25,6 +25,13 @@ client = SpamWatch::Client.new(token)
 ban = client.get_ban(777000)
 ```
 
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var ban = client.GetBan(777000);
+```
+
 > This will return the following:
 
 ```python
@@ -41,6 +48,13 @@ ban = client.get_ban(777000)
 
 ```crystal
 // Todo
+```
+
+```csharp
+<SpamWatchBan: Id: 12345,
+      Reason: "Ban reason 1",
+      Date: 1579919357, 
+      admin: 1>
 ```
 
 > The returned JSON:
@@ -87,7 +101,7 @@ bans = client.get_bans()
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-let bans = client.getBans()
+let bans = client.getBans();
 ```
 
 ```crystal
@@ -97,6 +111,14 @@ token = "API_KEY"
 client = SpamWatch::Client.new(token)
 
 bans = client.get_bans()
+```
+
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var allBans = client.GetBans();
+
 ```
 
 > This will return the following:
@@ -120,6 +142,19 @@ bans = client.get_bans()
 
 ```crystal
 // Todo
+```
+
+```csharp
+[
+<SpamWatchBan: Id: 12345,
+      Reason: "Ban reason 1",
+      Date: 1579919357, 
+      admin: 1>,
+<SpamWatchBan: Id: 12345,
+      Reason: "Ban reason 2",
+      Date: 1579919357, 
+      admin: 1>
+]
 ```
 
 > The returned JSON:
@@ -171,6 +206,13 @@ bans = client.get_bans_min()
 // TODO
 ```
 
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var bans = client.GetMansMin();
+```
+
 > This will return the following:
 
 ```python
@@ -183,6 +225,10 @@ bans = client.get_bans_min()
 
 ```crystal
 // Todo
+```
+
+```csharp
+[12345, 6789]
 ```
 
 > The returned Content:
@@ -228,6 +274,13 @@ token = "API_KEY"
 client = SpamWatch::Client.new(token)
 
 client.add_ban(777000, "reason")
+```
+
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+client.AddBan(777000, "reason");
 ```
 
 ### HTTP Request
@@ -293,6 +346,13 @@ token = "API_KEY"
 client = SpamWatch::Client.new(token)
 
 client.delete_ban(777000)
+```
+
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+client.DeleteBan(777000);
 ```
 
 ### HTTP Request

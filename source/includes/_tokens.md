@@ -25,6 +25,15 @@ client = SpamWatch::Client.new(token)
 my_token = client.get_self()
 ```
 
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var token = client.Token;
+// Or by making a request:
+var token = client.GetSelf();
+```
+
 > This will return the following:
 
 ```python
@@ -41,6 +50,14 @@ my_token = client.get_self()
 
 ```crystal
 // Todo
+```
+
+```csharp
+<SpamWatchToken: Id: 1,
+        Permission: <Permission.Root: 1>,
+        token: "vN9cBTtO8xgC4Qm",
+        userid: 777000,
+        retired: false>
 ```
 
 > The returned JSON:
@@ -89,6 +106,13 @@ client = SpamWatch::Client.new(token)
 tokens = client.get_tokens()
 ```
 
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var tokens = client.GetTokens();
+```
+
 > This will return the following:
 
 ```python
@@ -110,6 +134,21 @@ tokens = client.get_tokens()
 
 ```crystal
 // Todo
+```
+
+```csharp
+[
+<SpamWatchToken: Id: 1,
+        Permission: <Permission.Root: 1>,
+        token: "vN9cBTtO8xgC4Qm",
+        userid: 777000,
+        retired: false>,
+<SpamWatchToken: Id: 2,
+        Permission: <Permission.Admin: 2>,
+        token: "wfsr7EstLz5RGkV",
+        userid: 777000,
+        retired: false>
+]
 ```
 
 > The returned JSON:
@@ -167,6 +206,13 @@ client = SpamWatch::Client.new(token)
 token = client.get_token(1)
 ```
 
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+var token = client.GetToken(1);
+```
+
 > This will return the following:
 
 ```python
@@ -185,7 +231,13 @@ token = client.get_token(1)
 // Todo
 ```
 
-
+```csharp
+<SpamWatchToken: Id: 1,
+        Permission: <Permission.Root: 1>,
+        token: 'vN9cBTtO8xgC4Qm',
+        userid: 777000,
+        retired: false>
+```
 
 > The returned JSON:
 
@@ -237,6 +289,13 @@ token = "API_KEY"
 client = SpamWatch::Client.new(token)
 
 // Todo
+```
+
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+client.CreateToken(777000, Permission.User)
 ```
 
 ### HTTP Request
@@ -299,6 +358,12 @@ client = SpamWatch::Client.new(token)
 client.delete_token(1)
 ```
 
+```csharp
+using SpamWatch;
+
+var client = new SpamWatch.Client("API_KEY");
+client.DeleteToken(1);
+```
 This retires a specific Token. The Token won't be able to make any requests anymore.
 
 ### HTTP Request
