@@ -39,7 +39,8 @@ var ban = client.GetBan(777000);
     "admin": 2,
     "date": 1570674252,
     "id": 777000,
-    "reason": "Ban reason"
+    "reason": "Ban reason",
+    "message": "abc"
 }
 ```
 
@@ -110,7 +111,8 @@ var allBans = client.GetBans();
         "admin": 2,
         "date": 1570416445,
         "id": 6789,
-        "reason": "Ban reason 2"
+        "reason": "Ban reason 2",
+        "message": "abc"
     }
 ]
 ```
@@ -178,7 +180,7 @@ This method is rate limited at 1 request every 5 minutes for the `User` permissi
 import spamwatch
 
 client = spamwatch.Client('API_KEY')
-client.add_ban(777000, "reason")
+client.add_ban(777000, "reason", "message")
 ```
 
 ```javascript
@@ -223,7 +225,8 @@ Key | Value
     },
     {
         "id": 6789,
-        "reason": "Ban reason 2"
+        "reason": "Ban reason 2",
+        "message": "abc"
     }
 ]
 ```
