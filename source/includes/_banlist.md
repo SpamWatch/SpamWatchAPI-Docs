@@ -32,31 +32,6 @@ var client = new SpamWatch.Client("API_KEY");
 var ban = client.GetBan(777000);
 ```
 
-> This will return the following:
-
-```python
-<Ban: id: 12345,
-      reason: 'Ban reason 1',
-      date: datetime.datetime(2020, 1, 25, 3, 29, 17),
-      timestamp: 1579919357, 
-      admin: 1>
-```
-
-```javascript
-// Todo
-```
-
-```crystal
-// Todo
-```
-
-```csharp
-<SpamWatchBan: Id: 12345,
-      Reason: "Ban reason 1",
-      Date: 1579919357, 
-      admin: 1>
-```
-
 > The returned JSON:
 
 ```json
@@ -121,42 +96,6 @@ var allBans = client.GetBans();
 
 ```
 
-> This will return the following:
-
-```python
-[<Ban: id: 12345,
-       reason: 'Ban reason 1',
-       date: datetime.datetime(2020, 1, 25, 3, 29, 17),
-       timestamp: 1579919357,
-       admin: 1>,
- <Ban: id: 6789,
-       reason: 'Ban reason 2',
-       date: datetime.datetime(2020, 1, 25, 3, 29, 17),
-       timestamp: 1579919357,
-       admin: 1}>]
-```
-
-```javascript
-// Todo
-```
-
-```crystal
-// Todo
-```
-
-```csharp
-[
-<SpamWatchBan: Id: 12345,
-      Reason: "Ban reason 1",
-      Date: 1579919357, 
-      admin: 1>,
-<SpamWatchBan: Id: 12345,
-      Reason: "Ban reason 2",
-      Date: 1579919357, 
-      admin: 1>
-]
-```
-
 > The returned JSON:
 
 ```json
@@ -211,24 +150,6 @@ using SpamWatch;
 
 var client = new SpamWatch.Client("API_KEY");
 var bans = client.GetBansMin();
-```
-
-> This will return the following:
-
-```python
-[12345, 6789]
-```
-
-```javascript
-// Todo
-```
-
-```crystal
-// Todo
-```
-
-```csharp
-[12345, 6789]
 ```
 
 > The returned Content:

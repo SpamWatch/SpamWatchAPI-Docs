@@ -34,31 +34,6 @@ var token = client.Token;
 var token = client.GetSelf();
 ```
 
-> This will return the following:
-
-```python
-<Token: id: 1,
-        permission: <Permission.Root: 1>,
-        token: 'vN9cBTtO8xgC4Qm',
-        userid: 777000,
-        retired: False>
-```
-
-```javascript
-// Todo
-```
-
-```crystal
-// Todo
-```
-
-```csharp
-<SpamWatchToken: Id: 1,
-        Permission: <Permission.Root: 1>,
-        token: "vN9cBTtO8xgC4Qm",
-        userid: 777000,
-        retired: false>
-```
 
 > The returned JSON:
 
@@ -111,44 +86,6 @@ using SpamWatch;
 
 var client = new SpamWatch.Client("API_KEY");
 var tokens = client.GetTokens();
-```
-
-> This will return the following:
-
-```python
-[<Token: id: 1,
-         permission: <Permission.Root: 1>,
-         token: 'vN9cBTtO8xgC4Qm',
-         userid: 777000,
-         retired: False>,
- <Token: id: 3,
-         permission: <Permission.Admin: 2>,
-         token: 'wfsr7EstLz5RGkV',
-         userid: 777000,
-         retired: False>]
-```
-
-```javascript
-// Todo
-```
-
-```crystal
-// Todo
-```
-
-```csharp
-[
-<SpamWatchToken: Id: 1,
-        Permission: <Permission.Root: 1>,
-        token: "vN9cBTtO8xgC4Qm",
-        userid: 777000,
-        retired: false>,
-<SpamWatchToken: Id: 2,
-        Permission: <Permission.Admin: 2>,
-        token: "wfsr7EstLz5RGkV",
-        userid: 777000,
-        retired: false>
-]
 ```
 
 > The returned JSON:
@@ -211,32 +148,6 @@ using SpamWatch;
 
 var client = new SpamWatch.Client("API_KEY");
 var token = client.GetToken(1);
-```
-
-> This will return the following:
-
-```python
-<Token: id: 1,
-        permission: <Permission.Root: 1>,
-        token: 'vN9cBTtO8xgC4Qm',
-        userid: 777000,
-        retired: False>
-```
-
-```javascript
-// Todo
-```
-
-```crystal
-// Todo
-```
-
-```csharp
-<SpamWatchToken: Id: 1,
-        Permission: <Permission.Root: 1>,
-        token: 'vN9cBTtO8xgC4Qm',
-        userid: 777000,
-        retired: false>
 ```
 
 > The returned JSON:
@@ -364,6 +275,7 @@ using SpamWatch;
 var client = new SpamWatch.Client("API_KEY");
 client.DeleteToken(1);
 ```
+
 This retires a specific Token. The Token won't be able to make any requests anymore.
 
 ### HTTP Request
