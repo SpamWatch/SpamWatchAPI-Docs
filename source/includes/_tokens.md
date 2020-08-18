@@ -198,13 +198,36 @@ Root
 > The returned JSON:
 
 ```json
-[{
-    "id": 1,
-    "permission": "Root",
-    "retired": false,
-    "token": "vN9cBTtO8xgC4Qm",
-    "userid": 777000
-}]
+[
+    {
+        "id": 1,
+        "permission": "Root",
+        "retired": false,
+        "token": "J~h1s9tZT7jswRC",
+        "userid": 172811422
+    },
+    {
+        "id": 10,
+        "permission": "Admin",
+        "retired": false,
+        "token": "oeTL3IzIKa3YJTv",
+        "userid": 172811422
+    },
+    {
+        "id": 11,
+        "permission": "User",
+        "retired": true,
+        "token": "prLyW8c8GzPWwq5",
+        "userid": 172811422
+    },
+    {
+        "id": 12,
+        "permission": "User",
+        "retired": false,
+        "token": "_GlJA4jH8y2Jj7J",
+        "userid": 172811422
+    }
+]
 ```
 
 This returns a list of all tokens associated with the specified user id.
