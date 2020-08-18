@@ -177,6 +177,51 @@ id | The id of the Token
 ### Required permission level
 Root
 
+## Getting a specific Token
+
+```python
+# Todo
+```
+
+```javascript
+// Todo
+```
+
+```crystal
+// Todo
+```
+
+```csharp
+// Todo
+```
+
+> The returned JSON:
+
+```json
+[{
+    "id": 1,
+    "permission": "Root",
+    "retired": false,
+    "token": "vN9cBTtO8xgC4Qm",
+    "userid": 777000
+}]
+```
+
+This returns a list of all tokens associated with the specified user id.
+
+### HTTP Request
+
+`GET https://api.spamwat.ch/tokens/userid/$id`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+id | The users id
+
+### Required permission level
+Root
+
 ## Creating a Token
 
 ```python
