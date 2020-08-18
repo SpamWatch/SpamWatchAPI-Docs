@@ -8,8 +8,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - csharp: CSharp
   
 toc_footers:
-  - <a href='https://t.me/SpamWatch'>Join the channel for any news</a>
-  - <a href='https://t.me/SpamWatchSupport'>Get a API key for testing</a>
+  - <a href='https://t.me/SpamWatch' rel="noopener" target="_blank">Join the channel for any news</a>
+  - <a href='https://t.me/SpamWatchBot?start=token' rel="noopener" target="_blank">Get an access token</a>
 
 includes:
   - permissions
@@ -49,9 +49,9 @@ using SpamWatch;
 var client = new SpamWatch.Client("API_KEY");
 ```
 
-> Make sure to replace `APIgit st_KEY` with your API key.
+> Make sure to replace `API_KEY` with your API key.
 
-The API uses API keys to allow access to the API. You can get a API key in the [Support Chat](https://t.me/SpamWatchSupport).
+The API uses API keys to allow access to the API. You can get a API key [here](https://t.me/SpamWatchBot?start=token).
 
 The API expects the API key to be included in all API requests to the server in a header that looks like the following:
 
