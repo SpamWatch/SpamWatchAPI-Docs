@@ -28,6 +28,7 @@ Request | Path
 ------- | ----
 GET | [`/tokens`](#getting-all-tokens)
 GET | [`/tokens/$id`](#getting-a-specific-token)
+GET | [`/tokens/userid/$id`](#getting-a-users-tokens)
 POST | [`/tokens`](#creating-a-token)
 DELETE | [`/tokens/$id`](#retiring-a-specific-token)
 

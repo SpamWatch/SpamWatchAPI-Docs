@@ -177,7 +177,7 @@ id | The id of the Token
 ### Required permission level
 Root
 
-## Getting a specific Token
+## Getting a Users tokens
 
 ```python
 # Todo
