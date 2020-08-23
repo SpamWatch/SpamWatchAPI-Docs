@@ -273,8 +273,13 @@ client = SpamWatch::Client.new(token)
 ```csharp
 using SpamWatch;
 
-var client = new SpamWatch.Client("API_KEY");
-client.CreateToken(777000, Permission.User)
+var newToken = new Token()
+{
+    UserId = 777000,
+    Permission = Permissions.User
+};
+
+token = client.CreateToken(newToken);
 ```
 
 ### HTTP Request

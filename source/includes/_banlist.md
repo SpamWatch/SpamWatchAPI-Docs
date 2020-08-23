@@ -187,7 +187,15 @@ client.add_ban(777000, "reason", "message")
 const SpamWatch = require('spamwatch');
 
 const client = new SpamWatch.Client("API_KEY");
-client.addBan(777000, "reason")
+
+var newBan = new Ban()
+{
+    UserId = 777000,
+    Reason = "Ban Reason",
+    Message = "Telegram Message that got the user banned"
+};
+
+client.AddBan(newBan);
 ```
 
 ```crystal
